@@ -24,6 +24,7 @@ A Flask web application that analyzes emotions from audio recordings using machi
 - **NumPy 1.23.5** - Numerical computations
 - **Tkinter** - GUI display (built-in)
 
+## Features 
 - **🎤 Real-time Audio Recording**: Capture 3-second audio clips directly from the microphone
 - **🧠 Emotion Detection**: ML-powered emotion classification using prosodic features (pitch, intensity)
 - **📊 Five Emotion Classes**: Detects Happiness, Sadness, Anger, Fear, and Neutral emotions
@@ -52,7 +53,6 @@ EmotionTracker-Interactive-Audio-Based-Emotion-Analysis/
 │   ├── Happiness/            # Happiness emotion samples
 │   ├── Neutral/              # Neutral emotion samples
 │   ├── Sad/                  # Sad emotion samples
-│   └── archive/              # Archive folder (optional)
 │
 ├── templates/                 # Flask HTML templates
 │   ├── survey_form.html      # Survey form page
@@ -72,7 +72,7 @@ EmotionTracker-Interactive-Audio-Based-Emotion-Analysis/
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/EmotionTracker-Interactive-Audio-Based-Emotion-Analysis.git
+git clone https://github.com/Barath-S29/EmotionTracker-Interactive-Audio-Based-Emotion-Analysis.git
 cd EmotionTracker-Interactive-Audio-Based-Emotion-Analysis
 ```
 
@@ -88,7 +88,7 @@ pip install -r requirements.txt
 
 ### Step 3: Prepare Dataset
 
-Organize your audio files in the `Dataset/` folder:
+Organize your audio files in the `Dataset/` folder (it is already organised): 
 
 ```
 Dataset/
@@ -104,7 +104,7 @@ Dataset/
     └── *.wav files
 ```
 
-Use `organize_archive.py` to automatically organize files from an archive folder.
+Use `organize_archive.py` to automatically organize files from a dataset folder containing audio files not segregated based on emotions (in case you are using your own dataset of audio files or a different dataset).
 
 ## Configuration
 
@@ -180,11 +180,11 @@ To organize audio files from an archive folder:
 python organize_archive.py
 ```
 
-The script will:
+The script will (use it only if using a different dataset):
 1. Train a model on your existing dataset
-2. Predict emotions for files in `Dataset/archive/`
-3. Organize them into emotion folders
-4. Show statistics
+2. Predict emotions for files in `Dataset/<folder_containing_all_audio_files>/` Note: Here it is already categorized based on emotions
+4. Organize them into emotion folders
+5. Show statistics
 
 **Options**:
 - **Copy mode** (default): Keeps original files in archive
@@ -299,6 +299,7 @@ pip install pyaudio
 
 ### Email Not Sending
 
+- Create `config.py` based on `config.example.py`.
 - Verify email credentials in `config.py` or environment variables
 - For Gmail, use an App Password (not regular password)
 - Check SMTP server settings
