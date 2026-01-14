@@ -24,6 +24,7 @@ A Flask web application that analyzes emotions from audio recordings using machi
 - **NumPy 1.23.5** - Numerical computations
 - **Tkinter** - GUI display (built-in)
 
+## Features 
 - **🎤 Real-time Audio Recording**: Capture 3-second audio clips directly from the microphone
 - **🧠 Emotion Detection**: ML-powered emotion classification using prosodic features (pitch, intensity)
 - **📊 Five Emotion Classes**: Detects Happiness, Sadness, Anger, Fear, and Neutral emotions
