@@ -299,6 +299,7 @@ pip install pyaudio
 
 ### Email Not Sending
 
+- Create `config.py` based on `config.example.py`.
 - Verify email credentials in `config.py` or environment variables
 - For Gmail, use an App Password (not regular password)
 - Check SMTP server settings
