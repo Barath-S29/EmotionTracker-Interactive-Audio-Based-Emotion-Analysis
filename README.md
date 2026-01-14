@@ -73,7 +73,7 @@ EmotionTracker-Interactive-Audio-Based-Emotion-Analysis/
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/EmotionTracker-Interactive-Audio-Based-Emotion-Analysis.git
+git clone https://github.com/Barath-S29/EmotionTracker-Interactive-Audio-Based-Emotion-Analysis.git
 cd EmotionTracker-Interactive-Audio-Based-Emotion-Analysis
 ```
 
