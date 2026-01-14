@@ -1,0 +1,90 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# Flask
+instance/
+.webassets-cache
+
+# # Recordings (user audio files)
+# recordings/
+# *.wav
+# *.mp3
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables and config
+.env
+config.py
+*.key
+*.pem
+
+# Logs
+*.log
+
+# Model files (if you save trained models)
+*.pkl
+*.joblib
+*.h5
+*.model
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Dataset (optional - uncomment if you don't want to commit dataset)
+# Dataset/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Python virtual environment (alternative names)
+virtualenv/
+VIRTUAL_ENV/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
